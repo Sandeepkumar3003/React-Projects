@@ -5,7 +5,7 @@ import './App.css'
 
 function App(){
   const name = "John Doe";
-  const profession = "Java Full Stack Dveloper";
+  const profession = "Java Full Stack Developer";
   const projects = [
     {
       title: "Project One",
@@ -50,6 +50,7 @@ function App(){
             <div key={index} className='project-item'>
               <h3>{project.title}</h3>
               <h3>{project.description}</h3>
+              <a href={project.link} target='_blank' rel='noopener norefferrer'>View Project</a>
             </div>
           ))}
         </div>
