@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 
 function ProfileCard({name,age,isMember}){
     // const name = "Alice";
@@ -12,5 +12,11 @@ function ProfileCard({name,age,isMember}){
         </div>
     );
 }
+
+ProfileCard.propTypes = {
+    name: PropTypes.string,
+    age: PropTypes.number.isRequired,
+    isMember: PropTypes.bool.isRequired,
+};
 
 export default ProfileCard;

@@ -24,7 +24,7 @@ function App(){
       {/* Let's understand props */}
 
       <h1>Hello</h1>
-      <ProfildeCard name="Alice" age="20" num='2' isMember={true}/>
+      <ProfildeCard name="Alice" age={20} num='2' isMember={true}/>
       <ProfildeCard name="John" age="17" num={2} isMember={false}/>
     </div>
   );
