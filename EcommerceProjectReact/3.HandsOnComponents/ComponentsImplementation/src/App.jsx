@@ -9,7 +9,13 @@ import Footer from './components/Footer';
 import ProfildeCard from './components/ProfileCard';
 
 function App(){
-       
+
+  // const hobby1 = ['Reading' ,'Cooking'];
+  
+  const handleHobbyClick = (hobby) => {
+    alert(`You clicked on: ${hobby}`);
+  };
+
   return(
     <div className='container'>
       {/* <Header/>
@@ -23,9 +29,23 @@ function App(){
 
       {/* Let's understand props */}
 
+      
+
       <h1>Hello</h1>
-      <ProfildeCard name="Alice" age={20} num='2' isMember={true}/>
-      <ProfildeCard name="John" age="17" num={2} isMember={false}/>
+      <ProfildeCard name="Alice" 
+                    age={20} 
+                    num='2' 
+                    isMember={true} 
+                    hobbies={["Reading" ,'Cooking']}
+                    onHobbyClick = {handleHobbyClick}
+                    />
+      <ProfildeCard name="John" 
+                    age="17" 
+                    num={2} 
+                    isMember={false} 
+                    hobbies={['Treaking' ,'Running']}
+                    onHobbyClick = {handleHobbyClick}
+                    />
     </div>
   );
 }
