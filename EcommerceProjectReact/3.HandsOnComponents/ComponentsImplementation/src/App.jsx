@@ -1,23 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
+// import './App.css'
 import Header from './components/Header';
 import About from './components/About';
 import Project from './components/ProjectList';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ProfildeCard from './components/ProfileCard';
 
 function App(){
        
   return(
-    <div className='App'>
-      <Header/>
+    <>
+      {/* <Header/>
       <About/>
       <Project/>
       <Contact/>
-      <Footer/>
-    </div>
+      <Footer/> */}
+
+      {/* The above is for Portfolio Website */}
+
+
+      {/* Let's understand props */}
+
+      <h1>Hello</h1>
+      <ProfildeCard name="Alice"/>
+      <ProfildeCard name="John"/>
+    </>
   );
 }
 
