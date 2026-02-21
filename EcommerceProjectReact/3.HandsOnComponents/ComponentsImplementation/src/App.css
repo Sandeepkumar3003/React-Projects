@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f0c29;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #00f5d4;
+}
+
+a:hover {
+  color: #ffdd00;
+}
+
+/* HEADER */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.header nav a{
+  margin: 0 10px;
+  /* color: wheat; */
+}
+
+/* ABOUT */
+.about-section {
+  padding: 70px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* PROJECT SECTION */
+.projects-section {
+  padding: 70px;
+  text-align: center;
+}
+
+.projects-list .project-item {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  margin: 20px auto;
+  width: 60%;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}      
+
+
+
+
+
+.projects-list .project-item:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* CONTACT */
+.contact-section {
+  padding: 70px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* FOOTER */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: black;
+  font-size: 14px;
+}
