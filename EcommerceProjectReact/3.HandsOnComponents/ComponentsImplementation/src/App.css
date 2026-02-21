@@ -1,14 +1,14 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: #0f0c29;
+  background: #050302;
   background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
   color: white;
 }
 
 a {
   text-decoration: none;
-  color: #00f5d4;
+  color: #202625;
 }
 
 a:hover {
@@ -72,4 +72,14 @@ a:hover {
   text-align: center;
   background: black;
   font-size: 14px;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* Horizontal center */
+  justify-content: center; /* Vertical center (optional) */
+  min-height: 100vh;
+  text-align: center;
 }

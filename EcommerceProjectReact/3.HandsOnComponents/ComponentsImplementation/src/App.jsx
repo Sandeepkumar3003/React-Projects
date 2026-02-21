@@ -1,5 +1,6 @@
 
-// import './App.css'
+import './App.css'
+
 import Header from './components/Header';
 import About from './components/About';
 import Project from './components/ProjectList';
@@ -10,7 +11,7 @@ import ProfildeCard from './components/ProfileCard';
 function App(){
        
   return(
-    <>
+    <div className='container'>
       {/* <Header/>
       <About/>
       <Project/>
@@ -23,9 +24,9 @@ function App(){
       {/* Let's understand props */}
 
       <h1>Hello</h1>
-      <ProfildeCard name="Alice"/>
-      <ProfildeCard name="John"/>
-    </>
+      <ProfildeCard name="Alice" age="20" num='2'/>
+      <ProfildeCard name="John" age="17" num={2} />
+    </div>
   );
 }
 
