@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 function ProfileCard({name,age,isMember, hobbies , onHobbyClick}){
     // const name = "Alice";
-    
+           
    
     return(
         <div>
