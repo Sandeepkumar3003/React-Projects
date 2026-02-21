@@ -16,6 +16,24 @@ function App(){
     alert(`You clicked on: ${hobby}`);
   };
 
+  const aliceProfile = {
+    name:"Alice",
+    age:20,
+    num:'2',
+    isMember:true, 
+    hobbies:["Reading" ,'Cooking'],
+    onHobbyClick : handleHobbyClick,
+  } ;
+
+  const johnProfile = {
+    name:"John",
+    age:"17",
+    num:2,
+    isMember:false,
+    hobbies:['Treaking' ,'Running'],
+    onHobbyClick : handleHobbyClick,
+  };
+
   return(
     <div className='container'>
       {/* <Header/>
@@ -32,20 +50,8 @@ function App(){
       
 
       <h1>Hello</h1>
-      <ProfildeCard name="Alice" 
-                    age={20} 
-                    num='2' 
-                    isMember={true} 
-                    hobbies={["Reading" ,'Cooking']}
-                    onHobbyClick = {handleHobbyClick}
-                    />
-      <ProfildeCard name="John" 
-                    age="17" 
-                    num={2} 
-                    isMember={false} 
-                    hobbies={['Treaking' ,'Running']}
-                    onHobbyClick = {handleHobbyClick}
-                    />
+      <ProfildeCard {...aliceProfile}/>
+      <ProfildeCard {...johnProfile}/>
     </div>
   );
 }
