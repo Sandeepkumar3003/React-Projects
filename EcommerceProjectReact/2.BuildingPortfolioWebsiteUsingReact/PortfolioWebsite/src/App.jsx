@@ -18,7 +18,7 @@ function App(){
       link :"#",
     },
 
-  ]
+  ]     
   
   return(
     <div className='App'>
